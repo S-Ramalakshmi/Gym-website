@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <nav class="nav-menu">
+            <div class="top-nav">
+                <img src="gym_icon.png" width="90px" alt="" class="logo">
+                <a href="./home.html"><img src="https://img.icons8.com/?size=100&id=jPDM9Pv61iP5&format=png&color=000000" alt="" width="35px" ></a>
+                <a href="./index.html"><img src="https://img.icons8.com/?size=100&id=1784&format=png&color=000000" width="35px" alt=""></a>
+                <a href="#exercise"><img src="https://img.icons8.com/?size=100&id=5NdwjtXQk39W&format=png&color=000000" alt="" width="35px" ></a>
+                <a href="#diet"><img src="https://img.icons8.com/?size=100&id=25480&format=png&color=000000" alt="" width="35px" ></a>
+                <a href="#payment"><img src="https://img.icons8.com/?size=100&id=112571&format=png&color=000000" alt="" width="35px"></a>
+            </div>
+            <div class="bottom-nav">
+                <a href="#account"><img src="https://img.icons8.com/?size=100&id=H6C79JoP90DH&format=png&color=000000" alt="" width="35px"></a>
+                <a href="#profile"><img src="https://img.icons8.com/?size=100&id=ckaioC1qqwCu&format=png&color=000000" alt="" width="35px"></a>
+            </div>
+        </nav>
+
+        </div>
+    </aside>
+
+    <div class="home-part">
+        <div class="nav-bar">
+            <div class="greet">
+                <h1>Hello,Creative tech factory</h1>
+                <div id="date">wednesday,Feb01,2025</div>
+            </div>
+            <div class="top-icons">
+                <input type="search" placeholder="search" class="search-bar">
+                <div class="bell-icon"><img src="bell.svg" alt=""></div>
+                <div class="toggle"><img src="menu.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add workout plan section start -->
+    <section class="plan-main" id="workout">
+        <div class="plana">
+            <p class="planahead">Workout Plan</p>
+            <button class="planabut" onclick="ena()"><img src="https://img.icons8.com/?size=100&id=24717&format=png&color=ffffff" width="20px">Add</button>
+        </div>
+        <div class="planb">
+            <table>
+                <tr>
+                    <th>S.No</th>
+                    <th>Plan Name</th>
+                    <th>Workouts</th>
+                    <th>Diet Plan</th>
+                    <th>Duration</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Weight Gain - 60 Days</td>
+                    <td>34</td>
+                    <td>3</td>
+                    <td>60 Days</td>
+                    <td>Jan 12, 2026</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Weight Gain - 60 Days</td>
+                    <td>34</td>
+                    <td>3</td>
+                    <td>60 Days</td>
+                    <td>Jan 12, 2026</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Weight Gain - 60 Days</td>
+                    <td>34</td>
+                    <td>3</td>
+                    <td>60 Days</td>
+                    <td>Jan 12, 2026</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Weight Gain - 60 Days</td>
+                    <td>34</td>
+                    <td>3</td>
+                    <td>60 Days</td>
+                    <td>Jan 12, 2026</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Weight Gain - 60 Days</td>
+                    <td>34</td>
+                    <td>3</td>
+                    <td>60 Days</td>
+                    <td>Jan 12, 2026</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- popup form start -->
+    <section class="popup" id="popup">
+    <div class="pop-main">
+        <div class="pophead">
+            <p>Add Workout Plan</p>
+            <button onclick="finish()"><img src="https://img.icons8.com/?size=100&id=3062&format=png&color=000000" width="20px"></button>
+        </div>
+        <form method="POST" action="#">
+            <input type="text" name="name" placeholder="Enter Workout Plan Name" required>
+            <input type="text" name="duration" placeholder="Enter Workout Duration in Days" required>
+            <select name="workouts" multiple>
+                <option value="#" selected disabled>Select the Workouts</option>
+                <option value="Situps">Sit-Ups</option>
+                <option value="Situps">Sit-Ups</option>
+                <option value="Situps">Sit-Ups</option>
+                <option value="Situps">Sit-Ups</option>
+                <option value="Situps">Sit-Ups</option>
+                <option value="Situps">Sit-Ups</option>
+            </select>
+            <select name="diets" multiple>
+                <option value="#" selected disabled>Select the Diet plan</option>
+                <option value="Healthy Food">Healthy Food</option>
+                <option value="Healthy Food">Healthy Food</option>
+                <option value="Healthy Food">Healthy Food</option>
+                <option value="Healthy Food">Healthy Food</option>
+                <option value="Healthy Food">Healthy Food</option>
+                <option value="Healthy Food">Healthy Food</option>
+            </select>
+            <button>Create</button>
+        </form>
+    </div>
+    </section>
+    <script>
+    var des = document.getElementById("popup");
+
+    function ena(){
+        des.style.display = "flex";
+    }
+
+    function finish(){
+        des.style.display = "none";
+    }
+</script>
+</body>
+
+</html>
